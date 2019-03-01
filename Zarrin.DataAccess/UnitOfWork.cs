@@ -15,7 +15,7 @@ namespace Zarrin.DataAccess {
         {
             return _context.SaveChanges();
         }
-        UserRepository Users { get; set; }
+        public UserRepository Users { get; set; }
         public void Dispose()
         {
             _context.Dispose();
