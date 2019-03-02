@@ -5,7 +5,7 @@ namespace Zarrin.Web.Controllers
 {
     public class AccountController : Controller
     {
-       private readonly UnitOfWork _unitOfWork;
+        private readonly UnitOfWork _unitOfWork;
         public AccountController(UnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
