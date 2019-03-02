@@ -1,0 +1,347 @@
+﻿
+@{
+    ViewData["Title"] = "UIAdvanceForms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">کتابخانه Select2 </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>معمولی</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">تهران</option>
+                            <option>مشهد</option>
+                            <option>اصفهان</option>
+                            <option>شیراز</option>
+                            <option>اهواز</option>
+                            <option>تبریز</option>
+                            <option>کرج</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label>غیرفعال</label>
+                        <select class="form-control select2" disabled="disabled" style="width: 100%;">
+                            <option selected="selected">تهران</option>
+                            <option>مشهد</option>
+                            <option>اصفهان</option>
+                            <option>شیراز</option>
+                            <option>اهواز</option>
+                            <option>تبریز</option>
+                            <option>کرج</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>چند انتخابی</label>
+                        <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
+                                style="width: 100%;">
+                            <option>تهران</option>
+                            <option>مشهد</option>
+                            <option>اصفهان</option>
+                            <option>شیراز</option>
+                            <option>اهواز</option>
+                            <option>تبریز</option>
+                            <option>کرج</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label>گزینه های غیرفعال</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">تهران</option>
+                            <option>مشهد</option>
+                            <option disabled="disabled">اصفهان غیرفعال</option>
+                            <option>شیراز</option>
+                            <option>اهواز</option>
+                            <option>تبریز</option>
+                            <option>کرج</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            برای کسب اطلاعات بیشتر و استفاده از راهنمای این کتابخانه به <a href="https://select2.github.io/">مستندات </a> مراجعه کنید
+        </div>
+    </div>
+    <!-- /.box -->
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="box box-danger">
+                <div class="box-header">
+                    <h3 class="box-title">قالب آماده ورودی</h3>
+                </div>
+                <div class="box-body">
+                    <!-- Date dd/mm/yyyy -->
+                    <div class="form-group">
+                        <label>قالب تاریخ</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                    <!-- Date mm/dd/yyyy -->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                    <!-- phone mask -->
+                    <div class="form-group">
+                        <label>تلفن</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                    <!-- phone mask -->
+                    <div class="form-group">
+                        <label>موبایل</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control"
+                                   data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                    <!-- IP mask -->
+                    <div class="form-group">
+                        <label>آی پی</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+            <div class="box box-info">
+                <div class="box-header">
+                    <h3 class="box-title">رنگ و زمان</h3>
+                </div>
+                <div class="box-body">
+                    <!-- Color Picker -->
+                    <div class="form-group">
+                        <label>انتخاب رنگ</label>
+                        <input type="text" class="form-control my-colorpicker1">
+                    </div>
+                    <!-- /.form group -->
+                    <!-- Color Picker -->
+                    <div class="form-group">
+                        <label>انتخاب رنگ با دکمه</label>
+
+                        <div class="input-group my-colorpicker2">
+                            <input type="text" class="form-control">
+
+                            <div class="input-group-addon">
+                                <i></i>
+                            </div>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                    <!-- time Picker -->
+                    <div class="bootstrap-timepicker">
+                        <div class="form-group">
+                            <label>انتخاب زمان</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control timepicker">
+
+                                <div class="input-group-addon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                        <!-- /.form group -->
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">انتخاب تاریخ <small>تاریخ ها شمسی شده و با خروجی تایم اسمتپ آماده ذخیره در دیتابیس هستند</small></h3>
+                </div>
+                <div class="box-body">
+
+                    <div class="form-group">
+                        <label>انتخاب تاریخ شمسی با خروجی تایم استمپ </label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" id="tarikh" class="form-control pull-right">
+                            <input type="text" id="tarikhAlt" class="form-control pull-right">
+                        </div>
+                        <!-- /.input group -->
+                        <br>
+                        <p>استفاده از کتابخانه باباخانی، برای تغییرات <a href="http://babakhani.github.io/PersianWebToolkit/doc/datepicker/">مستندات این کتابخانه</a> را مشاهده کنید </p>
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+            <!-- iCheck -->
+            <div class="box box-success">
+                <div class="box-header">
+                    <h3 class="box-title">کتاب خانه چک باکس و رادیو iCheck</h3>
+                </div>
+                <div class="box-body">
+                    <!-- Minimal style -->
+                    <!-- checkbox -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" class="minimal" checked>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="minimal">
+                        </label>
+                        <label>
+                            <input type="checkbox" class="minimal" disabled>
+                            نمونه چک باکس
+                        </label>
+                    </div>
+
+                    <!-- radio -->
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="r1" class="minimal" checked>
+                        </label>
+                        <label>
+                            <input type="radio" name="r1" class="minimal">
+                        </label>
+                        <label>
+                            <input type="radio" name="r1" class="minimal" disabled>
+                            نمونه رادیو
+                        </label>
+                    </div>
+
+                    <!-- Minimal red style -->
+                    <!-- checkbox -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" class="minimal-red" checked>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="minimal-red">
+                        </label>
+                        <label>
+                            <input type="checkbox" class="minimal-red" disabled>
+                            قالب قرمز چک باکس
+                        </label>
+                    </div>
+
+                    <!-- radio -->
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="r2" class="minimal-red" checked>
+                        </label>
+                        <label>
+                            <input type="radio" name="r2" class="minimal-red">
+                        </label>
+                        <label>
+                            <input type="radio" name="r2" class="minimal-red" disabled>
+                            قالب قرمز رادیو
+                        </label>
+                    </div>
+
+                    <!-- Minimal red style -->
+                    <!-- checkbox -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" class="flat-red" checked>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="flat-red">
+                        </label>
+                        <label>
+                            <input type="checkbox" class="flat-red" disabled>
+                            قالب فلت سبز چک باکس
+                        </label>
+                    </div>
+
+                    <!-- radio -->
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="r3" class="flat-red" checked>
+                        </label>
+                        <label>
+                            <input type="radio" name="r3" class="flat-red">
+                        </label>
+                        <label>
+                            <input type="radio" name="r3" class="flat-red" disabled>
+                            قالب فلت سبز رادیو
+                        </label>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+                    و چندین رنگ و مدل دیگر <a href="http://fronteed.com/iCheck/">مستندات کتاب خانه</a>
+                </div>
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col (right) -->
+    </div>
+    <!-- /.row -->
+
+</section>
+

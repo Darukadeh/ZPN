@@ -15,10 +15,81 @@ namespace Zarrin.Web.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Dashboard2()
         {
             return View();
         }
+
+        public IActionResult TopNavbar()
+        {
+            return View();
+        }
+
+        public IActionResult Boxed()
+        {
+            return View();
+        }
+
+
+        public IActionResult Fixed()
+        {
+            return View();
+        }
+
+       
+        public IActionResult Collapsed()
+        {
+            return View();
+        }
+
+        public IActionResult Widgets()
+        {
+            return View();
+        }
+
+        public IActionResult UIGeneral()
+        {
+            return View();
+        }
+
+        public IActionResult UIIcons()
+        {
+            return View();
+        }
+
+        public IActionResult UIButtons()
+        {
+            return View();
+        }
+
+        public IActionResult UISlider()
+        {
+            return View();
+        }
+
+        public IActionResult UITimeLine()
+        {
+            return View();
+        }
+        public IActionResult UIModal()
+        {
+            return View();
+        }
+
+        public IActionResult UIForms()
+        {
+            return View();
+        }
+        public IActionResult UIAdvanceForms()
+        {
+            return View();
+        }
+
+        public IActionResult UIEditor()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
