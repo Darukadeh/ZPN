@@ -30,13 +30,13 @@ namespace Zarrin.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddTransient<ZPNContext>();
+            services.AddDbContext<ZPNContext>(options =>
+                            options.UseSqlServer(Configuration.GetConnectionString("cnn")));
             services.AddTransient<UnitOfWork>();
             services.AddTransient<UserRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<ZPNContext>(options =>
-                            options.UseSqlServer(Configuration.GetConnectionString("cnn")));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
