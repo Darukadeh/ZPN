@@ -17,7 +17,7 @@ namespace Zarrin.DataAccess.Repositories
         }
         public IEnumerable<User> GetAllUsers(int pageIndex = 1, int pageSize = 10)
         {
-            return ZPNContext.Users.Skip(--pageIndex * pageSize).Take(pageSize).ToList();
+            return GetAll().Skip(--pageIndex * pageSize).Take(pageSize).ToList();
         }
     }
 }
