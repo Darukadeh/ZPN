@@ -31,7 +31,9 @@ namespace Zarrin.Web
             });
 
             services.AddDbContext<ZPNContext>(options =>
-                            options.UseSqlServer(Configuration.GetConnectionString("cnn")));
+                            options.UseSqlServer(Configuration.GetConnectionString("cnn"),
+                            b => b.MigrationsAssembly("Zarrin.Web")));
+                            
             services.AddTransient<UnitOfWork>();
             services.AddTransient<UserRepository>();
 

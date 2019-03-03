@@ -51,7 +51,7 @@ namespace Zarrin.Web.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.Users.Add(user);
-                _unitOfWork.Commit();
+                _unitOfWork.Commit("hadi");
                 return RedirectToAction(nameof(Index));
             }
             return View(user);
