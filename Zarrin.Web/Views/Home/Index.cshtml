@@ -1,17 +1,5 @@
-﻿            <!-- Content Header (Page header) -->
-@*<section class="content-header">
-    <h1>
-        داشبورد
-        <small>کنترل پنل</small>
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> خانه</a></li>
-        <li class="active">داشبورد</li>
-    </ol>
-</section>*@
-
-<bread-crumb asp-master-title="خانه" asp-slave-title="خانه" asp-master-icon="dashboard"></bread-crumb>
-<!-- Main content -->
+﻿
+<bread-crumb title="داشبورد" master-name="home" slave-name="index" master-icon="dashboard"></bread-crumb>
 <section class="content">
     <div class="row">
         <section class="col-lg-12 col-md-12 connectedSortable">
@@ -46,8 +34,5 @@
                 </form>
             </div>
         </section>
-        <!-- /.right col -->
     </div>
-    <!-- /.row (main row) -->
 </section>
-<!-- /.content -->
