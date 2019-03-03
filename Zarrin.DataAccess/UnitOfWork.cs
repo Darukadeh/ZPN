@@ -1,4 +1,5 @@
 using System;
+using Z.EntityFramework.Plus;
 using Zarrin.DataAccess.Context;
 using Zarrin.DataAccess.Repositories;
 
@@ -12,6 +13,11 @@ namespace Zarrin.DataAccess
         {
             _context = context;
             Users = userRepository;
+        }
+        public int Commit(string createdBy)
+        {
+            var audit = new Audit { CreatedBy = createdBy };
+            return _context.SaveChanges(audit);
         }
         public int Commit()
         {
