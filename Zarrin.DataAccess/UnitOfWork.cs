@@ -9,10 +9,10 @@ namespace Zarrin.DataAccess
     {
         private readonly ZPNContext _context;
 
-        public UnitOfWork(ZPNContext context, UserRepository userRepository)
+        public UnitOfWork(ZPNContext context)
         {
             _context = context;
-            Users = userRepository;
+            Users = new UserRepository(_context);
         }
         public int Commit(string createdBy)
         {
