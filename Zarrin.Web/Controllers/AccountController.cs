@@ -19,5 +19,10 @@
             var allUsers = _accountService.GetAllUsers();
             return View(allUsers);
         }
+
+         public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
