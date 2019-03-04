@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zarrin.DataAccess", "Zarrin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zarrin.Web", "Zarrin.Web\Zarrin.Web.csproj", "{B97921AE-9691-49F8-9071-623511EB8866}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zarrin.Services", "Zarrin.Services\Zarrin.Services.csproj", "{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{B97921AE-9691-49F8-9071-623511EB8866}.Release|x64.Build.0 = Release|Any CPU
 		{B97921AE-9691-49F8-9071-623511EB8866}.Release|x86.ActiveCfg = Release|Any CPU
 		{B97921AE-9691-49F8-9071-623511EB8866}.Release|x86.Build.0 = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|x64.Build.0 = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Debug|x86.Build.0 = Debug|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|x64.ActiveCfg = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|x64.Build.0 = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|x86.ActiveCfg = Release|Any CPU
+		{02DDE8B2-65B8-4BF5-BBBC-223F1EBB9043}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
