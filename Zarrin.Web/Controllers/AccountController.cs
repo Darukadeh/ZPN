@@ -1,19 +1,23 @@
-using Microsoft.AspNetCore.Mvc;
-using Zarrin.DataAccess;
-
-namespace Zarrin.Web.Controllers
+﻿namespace Zarrin.Web.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using Zarrin.DataAccess;
+    using Zarrin.Models.Entities;
+    using Zarrin.Services.Services;
+
     public class AccountController : Controller
     {
-        private readonly UnitOfWork _unitOfWork;
-        public AccountController(UnitOfWork unitOfWork)
+        private readonly AccountService _accountService;
+        public AccountController(AccountService accountService)
         {
-            _unitOfWork = unitOfWork;
+            _accountService = accountService;
         }
+
+        // GET: Users
         public IActionResult Index()
         {
-            var users = _unitOfWork.Users.GetAllUsers();
-            return View(users);
+            var allUsers = _accountService.GetAllUsers();
+            return View(allUsers);
         }
     }
 }

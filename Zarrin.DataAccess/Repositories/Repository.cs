@@ -22,7 +22,8 @@ namespace Zarrin.DataAccess.Repositories
 
         public IEnumerable<TEntity> GetAll()
         {
-            return Context.Set<TEntity>().FromCache().ToList();
+            return Context.Set<TEntity>().ToList();
+            // return Context.Set<TEntity>().FromCache().ToList();
         }
 
         public void Add(TEntity entity)

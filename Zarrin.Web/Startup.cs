@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Zarrin.DataAccess;
 using Zarrin.DataAccess.Context;
 using Zarrin.DataAccess.Repositories;
+using Zarrin.Services.Services;
 
 namespace Zarrin.Web
 {
@@ -35,9 +36,14 @@ namespace Zarrin.Web
                             b => b.MigrationsAssembly("Zarrin.Web")));
                             
             services.AddTransient<UnitOfWork>();
+
+            // repositories
             services.AddTransient<UserRepository>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            // Services
+            services.AddTransient<AccountService>();
+
+            services.AddMvc();
             
         }
 

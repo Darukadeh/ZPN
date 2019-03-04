@@ -17,6 +17,7 @@
     <ProjectReference Include="..\Zarrin.DataAccess\Zarrin.DataAccess.csproj" />
     <ProjectReference Include="..\Zarrin.Models\Zarrin.Models.csproj" />
     <ProjectReference Include="..\Zarrin.Common\Zarrin.Common.csproj" />
+    <ProjectReference Include="..\Zarrin.Services\Zarrin.Services.csproj" />
   </ItemGroup>
 
 </Project>
