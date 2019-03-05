@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Zarrin.Web.Models;
 
 namespace Zarrin.Web.Controllers
@@ -13,6 +14,18 @@ namespace Zarrin.Web.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public HomeController(ILogger<HomeController> log)
+        {
+            _log = log;
+        }
+
+        readonly ILogger<HomeController> _log;
+        public string log()
+        {
+            _log.LogCritical("Mohammad, LogCritical!");
+            return "View()";
         }
 
         public IActionResult Dashboard2()
@@ -36,7 +49,10 @@ namespace Zarrin.Web.Controllers
             return View();
         }
 
-       
+       public IActionResult Table()
+        {
+            return View();
+        }
         public IActionResult Collapsed()
         {
             return View();
