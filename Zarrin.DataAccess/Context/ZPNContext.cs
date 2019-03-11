@@ -19,8 +19,5 @@ namespace Zarrin.DataAccess.Context
         // Entityframework-Plus audit log entites
         public DbSet<AuditEntry> History { get; set; }
         public DbSet<AuditEntryProperty> HistoryDetails { get; set; }
-
-        // Domain Models
-        public DbSet<User> Users { get; set; }
     }
 }
