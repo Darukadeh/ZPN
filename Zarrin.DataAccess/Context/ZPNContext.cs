@@ -2,10 +2,11 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Z.EntityFramework.Plus;
 using Zarrin.Models.Entities;
+using Zarrin.Models.Entities.Identity;
 
 namespace Zarrin.DataAccess.Context
 {
-    public class ZPNContext : IdentityDbContext
+    public class ZPNContext : IdentityDbContext<AppIdentityUser, AppIdentityRole, string>
     {
         static ZPNContext()
         {
