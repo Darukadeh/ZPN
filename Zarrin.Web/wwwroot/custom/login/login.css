@@ -50,7 +50,7 @@ body {
 .im {
   position: relative;
   width: 150px;
-  height: 150px;
+  height: 40px;
   display: block;
   fill: #525151;
 }
